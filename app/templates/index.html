@@ -3,10 +3,12 @@
         <title>{{ title }}</title>
     </head>
     <body>
+        <form action = "http://localhost:5000/login" method = "post"></form>
         <ul>
         {% for member in members: % }
         <li>{{ member }}</li>
 	{% endfor %}
 	</ul>
+        </form>
     </body>
 </html>
